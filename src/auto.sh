@@ -8,4 +8,7 @@ sudo chown -R $(whoami) /Volumes/runtime/usr/macosx/brew/homebrew/etc /Volumes/r
 
 echo 'export PATH="/Volumes/runtime/usr/macosx/brew/homebrew/bin:$PATH"' >> ~/.bash_profile
 
+git -C "$(brew --repo homebrew/core)" fetch --unshallow
+
+
 ls ~/.configure
